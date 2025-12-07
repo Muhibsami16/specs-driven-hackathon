@@ -1,0 +1,16 @@
+Chapter 4: Locomotive and mobile Robotics
+
+Meta Description: Explore locomotion principles for mobile robots including wheeled systems, legged platforms, and aerial vehicles. Learn about navigation algorithms, path planning, obstacle avoidance, and the unique challenges of moving through complex environments autonomously.
+
+Principles of Mobile Robotics
+Mobile robotics focuses on platforms that can move through their environment autonomously or semi-autonomously. Unlike fixed-base manipulators, mobile robots must simultaneously perceive, plan, and execute locomotion while maintaining stability and avoiding obstacles. The coupling between perception, navigation, and control creates unique challenges and opportunities.
+Locomotion strategy profoundly influences where and how effectively a robot can operate. Wheeled robots excel on flat, prepared surfaces with high energy efficiency but struggle with stairs and rough terrain. Legged systems handle obstacles and uneven ground at the cost of complexity and energy consumption. Flying platforms access three-dimensional space but face strict weight and power limitations.
+
+Kinematic Models and Differential Drive
+The differential drive configuration uses two independently controlled wheels on a common axis with one or more passive casters for stability. By varying the speeds of the left and right wheels, the robot can drive forward, turn, or rotate in place. This simple, robust design dominates educational and service robotics.
+The kinematic model relates wheel velocities to the robot's motion in the plane. Forward kinematics compute the robot's velocity given wheel speeds, while inverse kinematics determine required wheel speeds to achieve desired velocities. The Instantaneous Center of Curvature (ICC) concept describes the center point around which the robot rotates at any moment.
+Differential drive robots are subject to nonholonomic constraints—they cannot move instantaneously in arbitrary directions. The robot must execute a sequence of forward motions and turns to reach poses requiring sideways displacement. This constraint affects path planning, requiring algorithms that generate feasible, smooth trajectories.
+Omnidirectional and Mecanum Wheels
+Omnidirectional platforms overcome nonholonomic limitations through specialized wheel designs. Mecanum wheels feature rollers at 45-degree angles to the wheel axis, enabling motion in any direction without rotation. Four mecanum wheels, properly oriented and controlled, provide full planar mobility.
+The kinematic model for mecanum-wheeled robots maps four wheel velocities to three degrees of freedom (x, y, θ). This overconstrained system allows force distribution among wheels, enabling optimization of wheel forces or motions. However, mecanum wheels offer reduced traction compared to conventional wheels and struggle on uneven surfaces.
+Omnidirectional robots find applications in constrained industrial environments where maneuverability matters more than terrain capability. The ability to translate sideways while rotating simplifies manipulation tasks and navigation in cluttered spaces. However, the complexity and cost of omnidirectional systems limit adoption to applications where their advantages justify these drawbacks.
