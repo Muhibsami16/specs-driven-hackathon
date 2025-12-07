@@ -1,11 +1,26 @@
-.features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
-  width: 100%;
+.featureLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.featureLink:hover {
+  text-decoration: none;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .featureSvg {
   height: 200px;
   width: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.featureLink:hover .featureSvg {
+  opacity: 0.8;
 }
