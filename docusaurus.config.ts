@@ -19,7 +19,7 @@ const config: Config = {
 
   onBrokenLinks: 'throw',
 
-  // ✅ URDU CONFIGURATION
+  // URDU CONFIGURATION
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ur'],
@@ -46,18 +46,10 @@ const config: Config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+
+        // ❌ FIX: Disable blog
+        blog: false,
+
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -83,7 +75,8 @@ const config: Config = {
           position: 'left',
           label: 'Chapters',
         },
-        // ✅ LANGUAGE DROPDOWN
+
+        // LANGUAGE DROPDOWN
         {
           type: 'localeDropdown',
           position: 'right',
@@ -122,10 +115,7 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
+            // ❌ FIX: Removed "Blog", because blog is disabled
             {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',

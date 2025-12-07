@@ -10,9 +10,6 @@
   "item.label.Tutorial": {
     "message": "سبق",
     "description": "Navbar item with label Tutorial"
-  },
-  "item.label.Blog": {
-    "message": "بلاگ",
-    "description": "Navbar item with label Blog"
   }
+  
 }
