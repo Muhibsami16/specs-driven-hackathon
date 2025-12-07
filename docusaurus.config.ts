@@ -66,7 +66,7 @@ const config: Config = {
       title: 'Physical AI',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'https://www.shutterstock.com/image-vector/ai-technology-icon-artificial-intelligence-600nw-2269141251.jpg',
       },
       items: [
         {
