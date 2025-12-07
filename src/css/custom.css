@@ -28,3 +28,46 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* ✅ URDU RTL SUPPORT */
+[dir='rtl'] {
+  text-align: right;
+  direction: rtl;
+}
+
+[dir='rtl'] .navbar__items {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .navbar__item {
+  margin-left: 0;
+  margin-right: var(--ifm-navbar-item-padding-horizontal);
+}
+
+[dir='rtl'] .menu {
+  text-align: right;
+}
+
+[dir='rtl'] .markdown h1,
+[dir='rtl'] .markdown h2,
+[dir='rtl'] .markdown h3,
+[dir='rtl'] .markdown h4 {
+  text-align: right;
+}
+
+[dir='rtl'] .markdown p,
+[dir='rtl'] .markdown li {
+  text-align: right;
+}
+
+[dir='rtl'] .pagination-nav {
+  flex-direction: row-reverse;
+}
+
+[dir='rtl'] .footer {
+  text-align: right;
+}
+
+[dir='rtl'] .col {
+  text-align: right;
+}

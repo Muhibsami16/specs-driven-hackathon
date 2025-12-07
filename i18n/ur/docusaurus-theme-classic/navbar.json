@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "فزیکل اے آئی",
+    "description": "The title in the navbar"
+  },
+  "item.label.Chapters": {
+    "message": "ابواب",
+    "description": "Navbar item with label Chapters"
+  },
+  "item.label.Tutorial": {
+    "message": "سبق",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "بلاگ",
+    "description": "Navbar item with label Blog"
+  }
+}
